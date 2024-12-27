@@ -1,0 +1,133 @@
+.maison {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: translateY(250px) translateX(500px);
+    /*animation: rotateHouse 5s linear infinite; /* Animation de rotation */
+  }
+  
+  .maison .sol{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    transform: rotateX(90deg) translateY(-000px) translateZ(-102px);
+    /* transform: rotateX(-90deg) translateX(-500px) translateY(-1000px;); */
+    /*animation: rotateHouse 5s linear infinite; /* Animation de rotation */
+  
+  }
+  
+  .maison .mur {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #8B4513; /* brun pour les murs */
+    border: 1px solid #333;
+  }
+  
+  .maison .mur.front {
+    /* background-color: green; */
+    transform: translateZ(100px);
+  }
+  
+  .maison .mur.back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .maison .mur.left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: #A0522D;
+  }
+  
+  .maison .mur.right {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: #A0522D;
+  }
+  
+  .maison .toit {
+    position: absolute;
+    top: -68px; /* Place le toit correctement au-dessus des murs */
+    width: 200px;
+    height: 200px;
+    transform: rotateX(180deg);
+    transform-style: preserve-3d;
+  }
+  
+  .maison .toit-face {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 200px 100px 0px 100px;
+    border-color: #B22222 transparent transparent transparent;
+  }
+  
+  .maison .toit-face.front {
+    /* background-color: green; */
+    transform: rotateX(-30deg) translateZ(100px) translateY(75px);
+  }
+  
+  .maison .toit-face.back {
+    /* background-color: blue; */
+    transform: rotateX(30deg) translateZ(-100px) translateY(75px);
+  }
+  
+  .maison .toit-face.left {
+    /* background-color: yellow; */
+    transform: rotateY(-90deg) rotateX(-30deg) translateZ(100px) translateY(75px);
+  }
+  
+  .maison .toit-face.right {
+    /* background-color: black; */
+    transform: rotateY(90deg) rotateX(-30deg) translateZ(100px) translateY(75px);
+  }
+  
+  .maison .porte {
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    background-color: #654321;
+    bottom: 0;
+    left: 70px;
+    transform: translateZ(101px);
+    border: 2px solid #333;
+  }
+  
+  .maison .fenetre{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #0debf3;
+  }
+  
+  .maison .volet{
+    position: absolute;
+    background-color: #654321;
+    border: 2px solid #333;
+    width: 30px;
+    height: 60px;
+  }
+  
+  .maison .fenetre.right {
+  
+    bottom: 0;
+    left: 70px;
+    transform: rotateY(90deg) translateY(-50px) translateZ(99px);
+    border: 2px solid #333;
+  }
+  
+  .maison .fenetre.left {
+    bottom: 0;
+    left: 70px;
+    transform: rotateY(-90deg) translateY(-50px) translateZ(102px);
+    border: 2px solid #333;
+  }
+  
+  .maison .volet.left {
+    left: -30px;
+  }
+  
+  .maison .volet.right {
+    left: 60px;
+  }
