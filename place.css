@@ -2,9 +2,7 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    /* background-color: rgb(255, 255, 255); */
     transform-style: preserve-3d;
-    /* transform: translateY(250px) translateX(500px); */
 }
 
 .place .fontaine{
@@ -15,7 +13,6 @@
     border-radius: 50%;
     background: radial-gradient(circle, white 60%, gray 60%);
     border: solid yellow 30px;
-    /* transform: rotateX(90deg) translateY(-1000px) translateZ(100px); */
 }
 
 .place .route1{
@@ -52,15 +49,11 @@
 
 .place .jet1{
     position: absolute;
-    /* transform-style: preserve-3d; */
     width: 50px;
     height: 50px;
     transform: rotateX(90deg) rotateY(180deg) translateZ(102px) translateY(-90px) translateX(-60px);
     border-radius: 50% 50% 50% 50%;
-    /* background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, white 60%); */
     border: dotted white 10px;
-    /* perspective-origin: 50% 50%; */
-    /* animation: jet 10s linear infinite; */
 }
 
 .place .jet2{
@@ -69,7 +62,6 @@
     height: 50px;
     transform: rotateX(90deg) rotateY(180deg) translateZ(102px) translateY(-90px) translateX(-140px);
     border-radius: 50% 50% 50% 50%;
-    /* background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, white 60%); */
     border: dotted white 10px;
 }
 
@@ -79,7 +71,6 @@
     height: 50px;
     transform: rotateX(90deg) rotateY(90deg) translateZ(102px) translateY(-90px) translateX(130px);
     border-radius: 50% 50% 50% 50%;
-    /* background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, white 60%); */
     border: dotted white 10px;
 }
 
@@ -89,15 +80,5 @@
     height: 50px;
     transform: rotateX(90deg) rotateY(90deg) translateZ(102px) translateY(-90px) translateX(60px);
     border-radius: 50% 50% 50% 50%;
-    /* background: radial-gradient(circle, rgba(255, 255, 255, 0) 60%, white 60%); */
     border: dotted white 10px;
 }
-
-/* @keyframes jet {
-    from {
-        transform: rotateX(90deg) rotateY(180deg) rotateZ(0deg) translateZ(102px) translateY(-90px) translateX(-60px);
-      }
-      to {
-        transform: rotateX(450deg) rotateY(-180deg) rotateZ(360deg) translateZ(102px) translateY(-90px) translateX(-60px);
-      }
-} */

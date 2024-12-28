@@ -15,10 +15,10 @@ body {
 
 @keyframes rotateHouse {
   from {
-    transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px);
+    transform: rotateX(-25deg) rotateY(0deg) translateZ(0px) translateX(100px);
   }
   to {
-    transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px);
+    transform: rotateX(-25deg) rotateY(360deg) translateZ(0px) translateX(100px);
   }
 }
 
@@ -29,11 +29,12 @@ body {
   width: 2000px;
   height: 2000px;
   transform-style: preserve-3d;
-  transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px);
+  /* transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px); */
   animation: rotateHouse 5s linear infinite; /* Animation de rotation */
 }
 
 .herbe{
+  /* transform-origin: center; */
   position: absolute;
   width: 2000px;
   height: 2000px;

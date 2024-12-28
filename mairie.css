@@ -3,8 +3,6 @@
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    /* transform: translateY(250px) translateX(500px); */
-    /*animation: rotateHouse 5s linear infinite; /* Animation de rotation */
   }
   
   .mairie .sol{
@@ -12,10 +10,7 @@
     width: 200px;
     height: 200px;
     background-color: white;
-    transform: rotateX(90deg) translateY(-000px) translateZ(-102px);
-    /* transform: rotateX(-90deg) translateX(-500px) translateY(-1000px;); */
-    /*animation: rotateHouse 5s linear infinite; /* Animation de rotation */
-  
+    transform: rotateX(90deg) translateY(-000px) translateZ(-102px); 
   }
   
   .mairie .mur {
@@ -27,7 +22,6 @@
   }
   
   .mairie .mur.front {
-    /* background-color: green; */
     transform: translateZ(100px);
   }
   
@@ -64,22 +58,18 @@
   }
   
   .mairie .toit-face.front {
-    /* background-color: green; */
     transform: rotateX(-30deg) translateZ(100px) translateY(75px);
   }
   
   .mairie .toit-face.back {
-    /* background-color: blue; */
     transform: rotateX(30deg) translateZ(-100px) translateY(75px);
   }
   
   .mairie .toit-face.left {
-    /* background-color: yellow; */
     transform: rotateY(-90deg) rotateX(-30deg) translateZ(100px) translateY(75px);
   }
   
   .mairie .toit-face.right {
-    /* background-color: black; */
     transform: rotateY(90deg) rotateX(-30deg) translateZ(100px) translateY(75px);
   }
   
@@ -96,9 +86,6 @@
 
   .mairie .inscription {
     position: absolute;
-    /* width: 60px;
-    height: 100px; */
-    /* background-color: #654321; */
     color: black;
     font-size: 36px;
     bottom: 0;
