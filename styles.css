@@ -12,21 +12,34 @@ body {
   transform: scale(0.2);
 }
 
-@keyframes rotateHouse {
+/* @keyframes rotateHouse {
   from {
     transform: rotateX(270deg) rotateY(270deg);
   }
   to {
     transform: rotateX(315deg) rotateY(315deg);
   }
-}
+} */
+
+/* @keyframes rotateHouse {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+} */
+
 
 .terrain{
   position: relative;
   width: 2000px;
   height: 1000px;
   transform-style: preserve-3d;
-  animation: rotateHouse 5s linear infinite; /* Animation de rotation */
+  /* transform: scale(0.5) translateX(750px) translateY(150px) rotateX(-45deg) rotateY(45deg); */
+  transform: translateY(350px) scale(1) translateX(900px) translateZ(1700px) rotateY(-5deg);
+  /* transform: scale(2) translateX(750px) translateY(150px) rotateX(-90deg) rotateY(0deg); */
+  /* animation: rotateHouse 5s linear infinite; Animation de rotation */
 }
 
 .herbe{
@@ -52,4 +65,8 @@ body {
 
 .mairie{
   transform: translateZ(-800px);
+}
+
+.place{
+  transform: translateX(-30px) translateZ(-30px) rotateX(90deg);
 }
