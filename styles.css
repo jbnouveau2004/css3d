@@ -55,7 +55,7 @@ body {
   position: absolute;
   width: 2000px;
   height: 2000px;
-  /* transform-style: preserve-3d; */
+  transform-style: preserve-3d; /* a le mettre quand même si pas d'autres éléments (sinon bug dans la version mobile) */
   background-color: green;
   transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(90deg);
   
