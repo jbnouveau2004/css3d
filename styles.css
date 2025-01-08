@@ -9,8 +9,6 @@ body {
 
 .scene {
   perspective: 2000px;
-  width: 2000px;
-  height: 2000px;
   /* transform: scale(0.5); */
 }
 
