@@ -9,10 +9,10 @@ body {
 
 .scene {
   perspective: 2000px;
-  /* transform: scale(0.5); */
+  transform: scale(2);
 }
 
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
   .scene{
     transform: scale(0.2);
   }
@@ -28,14 +28,17 @@ body {
   .scene{
     transform: scale(0.5);
   } 
-}
+} */
 
 @keyframes rotateHouse {
-  from {
-    transform: translateZ(0px) translateX(0px) rotateX(-50deg) rotateY(0deg);
+  0% {
+    transform: translateX(707px) translateZ(293px) rotateX(-5deg) rotateY(-45deg);
   }
-  to {
-    transform: translateZ(0px) translateX(0px) rotateX(-50deg) rotateY(360deg);
+  50%{
+    transform: translateX(0px) translateZ(0px) rotateX(-5deg) rotateY(0deg);
+  }
+  100% {
+    transform: translateX(-707px) translateZ(293px) rotateX(-5deg) rotateY(45deg);
   }
 }
 
@@ -46,8 +49,10 @@ body {
   width: 2000px;
   height: 2000px;
   transform-style: preserve-3d;
-  /* transform: rotateX(-0.5deg) rotateY(0deg) translateZ(4605px) translateX(100px); */
-  animation: rotateHouse 5s linear infinite; /* Animation de rotation */
+  /* transform: rotateY(-45deg) translateX(707px) translateZ(293px) rotateX(-5deg); */
+  /* transform: rotateY(45deg) translateX(0px) translateZ(0px) rotateX(0deg); */
+  /* transform: rotateY(45deg) translateX(-707px) translateZ(293px) rotateX(-0deg); */
+  animation: rotateHouse 5s linear infinite;
 }
 
 .herbe{
