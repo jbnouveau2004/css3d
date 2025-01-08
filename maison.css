@@ -83,6 +83,16 @@
     transform: translateZ(101px);
     border: 2px solid #333;
   }
+
+  .maison .inscription {
+    position: absolute;
+    color: black;
+    white-space: nowrap;
+    font-size: 36px;
+    bottom: 0;
+    left: 70px;
+    transform: translateZ(101px) translateY(-120px) translateX(-50px);
+  }
   
   .maison .fenetre{
     position: absolute;

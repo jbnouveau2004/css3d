@@ -8,17 +8,36 @@ body {
 }
 
 .scene {
-  perspective: 5000px;
-  transform: scale(0.2);
+  perspective: 2000px;
+  width: 2000px;
+  height: 2000px;
+  /* transform: scale(0.5); */
 }
 
+@media screen and (max-width: 900px){
+  .scene{
+    transform: scale(0.2);
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1280px){
+  .scene{
+    transform: scale(0.4);
+  }  
+}
+
+@media screen and (min-width: 900px){
+  .scene{
+    transform: scale(0.5);
+  } 
+}
 
 @keyframes rotateHouse {
   from {
-    transform: rotateX(-25deg) rotateY(0deg) translateZ(0px) translateX(100px);
+    transform: translateZ(0px) translateX(0px) rotateX(-50deg) rotateY(0deg);
   }
   to {
-    transform: rotateX(-25deg) rotateY(360deg) translateZ(0px) translateX(100px);
+    transform: translateZ(0px) translateX(0px) rotateX(-50deg) rotateY(360deg);
   }
 }
 
@@ -38,8 +57,9 @@ body {
   position: absolute;
   width: 2000px;
   height: 2000px;
+  /* transform-style: preserve-3d; */
   background-color: green;
-  transform: rotateX(90deg) translateX(-00px) translateY(-00px) translateZ(0px);
+  transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(90deg);
   
 }
 
