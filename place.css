@@ -11,7 +11,7 @@
     height: 200px;
     transform: rotateY(180deg) translateZ(102px);
     border-radius: 50%;
-    background: radial-gradient(circle, white 60%, gray 60%);
+    background: radial-gradient(circle, blue 60%, gray 60%);
     border: solid yellow 30px;
 }
 
@@ -51,34 +51,78 @@
     position: absolute;
     width: 50px;
     height: 50px;
-    transform: rotateX(90deg) rotateY(180deg) translateZ(102px) translateY(-90px) translateX(-60px);
+    translate: 50px 100px -100px;
+    transform: rotateX(90deg);
     border-radius: 50% 50% 50% 50%;
-    border: dotted white 10px;
+    border: dotted aqua 10px;
+    animation: rotateJet1 5s linear infinite;
 }
 
 .place .jet2{
     position: absolute;
     width: 50px;
     height: 50px;
-    transform: rotateX(90deg) rotateY(180deg) translateZ(102px) translateY(-90px) translateX(-140px);
+    translate: 130px 100px -100px;
+    transform: rotateX(90deg);
     border-radius: 50% 50% 50% 50%;
-    border: dotted white 10px;
+    border: dotted aqua 10px;
+    animation: rotateJet2 5s linear infinite;
 }
 
 .place .jet3{
     position: absolute;
     width: 50px;
     height: 50px;
-    transform: rotateX(90deg) rotateY(90deg) translateZ(102px) translateY(-90px) translateX(130px);
+    translate: 100px 130px -100px;
+    transform: rotateX(90deg) rotateY(90deg);
     border-radius: 50% 50% 50% 50%;
-    border: dotted white 10px;
+    border: dotted aqua 10px;
+    animation: rotateJet3 5s linear infinite;
 }
 
 .place .jet4{
     position: absolute;
     width: 50px;
     height: 50px;
-    transform: rotateX(90deg) rotateY(90deg) translateZ(102px) translateY(-90px) translateX(60px);
+    translate: 100px 60px -100px;
+    transform: rotateX(90deg) rotateY(90deg);
     border-radius: 50% 50% 50% 50%;
-    border: dotted white 10px;
+    border: dotted aqua 10px;
+    animation: rotateJet4 5s linear infinite;
+}
+
+@keyframes rotateJet1 {
+    from {
+      rotate: y 0deg;
+    }
+    to {
+      rotate: y -360deg;
+    }
+  }
+
+@keyframes rotateJet2 {
+    from {
+        rotate: y 0deg;
+    }
+    to {
+        rotate: y 360deg;
+    }
+}
+
+@keyframes rotateJet3 {
+    from {
+      rotate: x 0deg;
+    }
+    to {
+      rotate: x -360deg;
+    }
+  }
+
+@keyframes rotateJet4 {
+    from {
+        rotate: x 0deg;
+    }
+    to {
+        rotate: x 360deg;
+    }
 }

@@ -1,59 +1,26 @@
-body, ::before, ::after {
-  box-sizing: border-box;
-  padding: 0;
+body {
   margin: 0;
-  /* max-width: 100vw;
-  max-height: 100vh; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.section{
-  width: 2000px;
-  height: 2000px;
-  margin: -700px auto 0;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #87CEEB; /* ciel bleu */
+  width: 90vmin;
+  aspect-ratio: 1/1;
   overflow: hidden;
   border: 2px solid black;
-  background-color: #87CEEB; /* ciel bleu */
-  transform: scale(0.25);
 }
 
 .scene {
-  width: 2000px;
-  height: 2000px;
-  perspective: 2000px;
-  transform: scale(3);
-  /* margin: 100px auto 0; */
+  perspective: 5000px;
+  transform: scale(0.03);
 }
-
-/* @media screen and (max-width: 900px){
-  .scene{
-    transform: scale(0.2);
-  }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1280px){
-  .scene{
-    transform: scale(0.4);
-  }  
-}
-
-@media screen and (min-width: 900px){
-  .scene{
-    transform: scale(0.5);
-  } 
-} */
-
-@keyframes rotateHouse {
-  0% {
-    transform: translateX(707px) translateZ(293px) rotateX(-5deg) rotateY(-45deg);
-  }
-  50%{
-    transform: translateX(0px) translateZ(0px) rotateX(-5deg) rotateY(0deg);
-  }
-  100% {
-    transform: translateX(-707px) translateZ(293px) rotateX(-5deg) rotateY(45deg);
-  }
-}
-
 
 
 .terrain{
@@ -61,20 +28,41 @@ body, ::before, ::after {
   width: 2000px;
   height: 2000px;
   transform-style: preserve-3d;
-  /* transform: rotateY(-45deg) translateX(707px) translateZ(293px) rotateX(-5deg); */
-  /* transform: rotateY(45deg) translateX(0px) translateZ(0px) rotateX(0deg); */
-  /* transform: rotateY(45deg) translateX(-707px) translateZ(293px) rotateX(-0deg); */
-  animation: rotateHouse 5s linear infinite;
+
+  /* rotate: x -1deg;
+  rotate: y 250deg;
+  translate: 0 100px 5000px; */
+
+    /* rotate: x -1deg; */
+  /* rotate: y 300deg; */
+  translate: 0px 200px 4750px;
+  transform: rotateY(75deg);
+
+  /* rotate: x 15deg; */
+  /* rotate: y 400deg; */
+  /* translate: 0 50px 4750px; */
+
+
+  animation: rotateMap 50s linear infinite;
+}
+
+@keyframes rotateMap {
+  from {
+    rotate: y 0deg;
+    /* transform: rotateY(75deg); */
+  }
+  to {
+    rotate: y 360deg;
+    /* transform: rotateY(75deg); */
+  }
 }
 
 .herbe{
-  /* transform-origin: center; */
   position: absolute;
   width: 2000px;
   height: 2000px;
-  transform-style: preserve-3d; /* a le mettre quand même si pas d'autres éléments (sinon bug dans la version mobile) */
   background-color: green;
-  transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(90deg);
+  transform: rotateX(90deg) translateX(-00px) translateY(-00px) translateZ(0px);
   
 }
 
